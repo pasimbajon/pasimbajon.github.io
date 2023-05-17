@@ -1,0 +1,53 @@
+.Content{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.tag{
+    color: white;
+}
+
+.Grid-Selection{
+    display: grid;
+    width: 100%;
+    grid-template-columns: repeat(auto-fill, minmax(450px, 1fr));
+    gap: 1em;
+    margin-top: 2em;
+    margin-bottom: 2em;
+}
+
+.Grid-Selection > div{
+    position: relative;
+    width: 100%;
+    height: 500px;
+    color: white;
+    background-color: black;
+    border: 2px solid hsl(0, 0%, 5%);
+    cursor: pointer;
+}
+
+.Grid-Selection > div > img{
+    width: 100%;
+}
+.grid-images{
+    text-decoration: none;
+}
+.grid-images img{
+    width: 100%;
+}
+
+.item-desc{
+    position: absolute;
+    width: 100%;
+    padding: 0.2em 1em 0;
+    background-color: hsl(0, 0%, 10%);
+    height: 211px;
+    bottom: 0;
+}
+.item-desc h2{
+    text-decoration: none;
+    color: white;
+}
