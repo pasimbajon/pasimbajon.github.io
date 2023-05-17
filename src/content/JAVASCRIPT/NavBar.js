@@ -1,12 +1,12 @@
 import React, {useState} from 'react';
 import '../CSS/NavBar.css';
 import { Link } from "react-router-dom";
-import { FaSearch } from "react-icons/fa"
 import { SearchBar } from './Search/SearchBar';
+import { SearchResultList } from './Search/SearchResultList';
 
 
 export default function NavBar() {
-    
+    const [results, setResults]=useState([]);
   return (
     <nav className='navbar'>
         <div className='nav-brand'>
@@ -16,7 +16,8 @@ export default function NavBar() {
             <Link to="/" className='gameon-brand'>GAME-ON</Link>
         </div>
         <div className='Search-Bar'>
-            <SearchBar />
+            <SearchBar setResults={setResults}/>
+            <SearchResultList results={results}/>
         </div>
         <div className='navbar-links'>
             <ul>

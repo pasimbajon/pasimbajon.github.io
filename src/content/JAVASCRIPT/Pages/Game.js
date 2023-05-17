@@ -1,7 +1,6 @@
 import React from 'react'
 import NavBar from '../NavBar';
 import Footer from '../Footer';
-import Games from '../Games';
 import ACO from '../../GAME PAGES/ACO';
 
 export default function Game() {

@@ -1,21 +1,18 @@
 import React from 'react';
 import '../CSS/Game.css';
 import ImageSlider from '../JAVASCRIPT/ImageSlider';
-import NavBar from '../JAVASCRIPT/NavBar';
-import Footer from '../JAVASCRIPT/Footer';
 
 export default function Games() {
     const slides =[
-        { image: "http://localhost:3000/GAMES/ASSASSINS CREED ORIGINS/ACO1.jpg"},
-        { image: "http://localhost:3000/GAMES/ASSASSINS CREED ORIGINS/ACO2.jpg"},
-        { image: "http://localhost:3000/GAMES/ASSASSINS CREED ORIGINS/ACO3.jpg"},
-        { image: "http://localhost:3000/GAMES/ASSASSINS CREED ORIGINS/ACO4.jpg"},
-        { image: "http://localhost:3000/GAMES/ASSASSINS CREED ORIGINS/ACO5.jpg"}
+        { image: "../GAMES/ASSASSINS CREED ORIGINS/ACO1.jpg"},
+        { image: "../GAMES/ASSASSINS CREED ORIGINS/ACO2.jpg"},
+        { image: "../GAMES/ASSASSINS CREED ORIGINS/ACO3.jpg"},
+        { image: "../GAMES/ASSASSINS CREED ORIGINS/ACO4.jpg"},
+        { image: "../GAMES/ASSASSINS CREED ORIGINS/ACO5.jpg"}
     ];
 
     return (
     <>
-    <NavBar />
     <div className='Game-showcase'>
         <div className='Game-title'>Assassin's Creed® Origins</div>
         <div className='Game-Content'>
@@ -32,7 +29,6 @@ export default function Games() {
             </div>
         </div>
     </div>
-    <Footer />
     </>
   )
 }

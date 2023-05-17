@@ -1,9 +1,6 @@
 import React from 'react';
 import '../CSS/Game.css';
 import ImageSlider from '../JAVASCRIPT/ImageSlider';
-import NavBar from '../JAVASCRIPT/NavBar';
-import Footer from '../JAVASCRIPT/Footer';
-
 export default function Games() {
     const slides =[
         { image: "http://localhost:3000/GAMES/CALL OF DUTY MODERN WARFARE II/CODMWII1.jpg"},
@@ -15,7 +12,6 @@ export default function Games() {
 
     return (
     <>
-    <NavBar />
     <div className='Game-showcase'>
         <div className='Game-title'>Call of Duty®: Modern Warfare® II</div>
         <div className='Game-Content'>
@@ -32,7 +28,6 @@ export default function Games() {
             </div>
         </div>
     </div>
-    <Footer />
     </>
   )
 }

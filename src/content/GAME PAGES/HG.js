@@ -1,8 +1,7 @@
 import React from 'react';
 import '../CSS/Game.css';
 import ImageSlider from '../JAVASCRIPT/ImageSlider';
-import NavBar from '../JAVASCRIPT/NavBar';
-import Footer from '../JAVASCRIPT/Footer';
+
 
 export default function Games() {
     const slides =[
@@ -15,7 +14,6 @@ export default function Games() {
 
     return (
     <>
-    <NavBar />
     <div className='Game-showcase'>
         <div className='Game-title'>Hogwarts Legacy</div>
         <div className='Game-Content'>
@@ -32,7 +30,6 @@ export default function Games() {
             </div>
         </div>
     </div>
-    <Footer />
     </>
   )
 }

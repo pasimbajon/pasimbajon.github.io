@@ -23,11 +23,14 @@ import SOFT from './content/GAME PAGES/SOFT';
 import SWJR from './content/GAME PAGES/SWJR';
 import TF2 from './content/GAME PAGES/TF2';
 import WT from './content/GAME PAGES/WT';
+import NavBar from './content/JAVASCRIPT/NavBar';
+import Footer from './content/JAVASCRIPT/Footer';
 
 
 function App() {
   return (
     <>
+      <NavBar />
       <Routes>
         <Route path='/' element={<Store />} />
         <Route path='/discover'>
@@ -54,8 +57,8 @@ function App() {
           <Route path='war_thunder' element={<WT />} />
         </Route>
         <Route path='/about' element={<About />} />
-        
       </Routes>
+      <Footer />
     </>
   );
 }

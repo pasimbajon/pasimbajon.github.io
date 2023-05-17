@@ -1,9 +1,8 @@
 import React from 'react';
-import { Link, Route, Routes } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import '../../CSS/Table.css';
 import Mostplayed from './Mostplayed';
 import Topsellers from './Topsellers';
-import ACO from '../../GAME PAGES/ACO';
 
 export default function Table() {
   return (
